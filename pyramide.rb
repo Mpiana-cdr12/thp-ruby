@@ -1,15 +1,18 @@
 #Pyramide qui monte 
 # Réalisé par Christophe Leray
 
-pyramide = []
+# Intialisation des variables 
 
+pyramide = []
+ct = etage 
+boucle = 0
 # Demande du nombre d'étages 
+
 puts "Combien d'étage souhaites tu?"
 print ">"
 etage = gets.to_i
 
-ct = etage 
-boucle = 0
+# Création de la boucle pour concaténation des epsaces et #
 
 puts "Voici la prymaide: "
 loop do 
@@ -23,9 +26,8 @@ loop do
 	end 
 end
 
-#puts '#' * etage
+# utilsiation fonction reverse pour afficher le dernier element en premier et vice versa
+
 puts pyramide.reverse
 puts "Je suis prêt pour la formation THP :)"
 
-# on commence par la ligne du bas en miltiplaint par un espace par le nonbre d etage e premiere element
-# puis on remplace le dernier eelement epar un # a droite
